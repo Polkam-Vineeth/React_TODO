@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import "../App.css"
-
+import todoimg from '../images/todoimg.png'
 const getLocalItmes = () => {
     let list = localStorage.getItem('lists');
 
@@ -83,7 +83,7 @@ const Todo = () => {
                   
                 <h1 style={{fontSize:'3.5em',fontFamily:'Satisfy'}} >Heyah , It's {day}.</h1>
                     <figure>
-                        <img src='/todoimg.png' alt="todologo" 
+                        <img src={todoimg} alt="todologo" 
                         style={{width:'250px', height:'250px'}}/>
                         <h2 style={{fontFamily:'Roboto'}}>Add Tasks to your TODO list here! 🎯</h2>
                     </figure>
